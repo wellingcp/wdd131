@@ -16,5 +16,4 @@ function changeTheme() {
         document.body.style.color = "#000";
         logo.src = "https://wddbyui.github.io/wdd131/images/byui-logo-blue.webp"
     }
-}           
-                    
+}
