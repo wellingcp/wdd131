@@ -1,0 +1,26 @@
+
+JAVASCRIPT
+Find elements:
+.querySelector()
+
+Change text:
+.textContent
+
+Change Styles:
+.style.color = "blue";
+.style.backgroundcolor = "blue";
+.style.fontsize = "3";
+
+Create Elements:
+createElement()
+
+Delete Elements:
+.remove()
+
+Append elemnt:
+.appendChild()
+
+HTML
+<h1 id = "title">Hello</h1>
+JAVA 
+document.getElementById("title)

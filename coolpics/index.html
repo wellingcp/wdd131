@@ -13,9 +13,11 @@
     <header>
         <h1>📷 Cool Pics</h1>
 
-        <button>Menu</button>
+        <button id="menu-button" aria-expanded="false">
+            Menu
+        </button>
 
-        <nav>
+        <nav id="main-nav">
             <a href="#">Home</a>
             <a href="#">People</a>
             <a href="#">Places</a>
@@ -24,20 +26,26 @@
     </header>
 
     <main>
-        <h2>Cool Pics 📷</h2>
+        <h2>Current Work</h2>
 
         <section class="gallery">
-            <img src="https://picsum.photos/300/300?random=1" alt="Random photo">
-            <img src="https://picsum.photos/300/300?random=2" alt="Random photo">
-            <img src="https://picsum.photos/300/300?random=3" alt="Random photo">
-            <img src="https://picsum.photos/300/300?random=4" alt="Random photo">
-            <img src="https://picsum.photos/300/300?random=5" alt="Random photo">
-            <img src="https://picsum.photos/300/300?random=6" alt="Random photo">
+            <img src="norris-small.jpg" data-full="norris-full.jpg" class="gallery-img" alt="Photo of Norris">
+            <img src="norris-small.jpg" data-full="norris-full.jpg" class="gallery-img" alt="Photo of Norris">
+            <img src="norris-small.jpg" data-full="norris-full.jpg" class="gallery-img" alt="Photo of Norris">
+            <img src="norris-small.jpg" data-full="norris-full.jpg" class="gallery-img" alt="Photo of Norris">
+            <img src="norris-small.jpg" data-full="norris-full.jpg" class="gallery-img" alt="Photo of Norris">
+            <img src="norris-small.jpg" data-full="norris-full.jpg" class="gallery-img" alt="Photo of Norris">
         </section>
     </main>
 
     <footer>
         <p>© 2026 Cool Pics</p>
     </footer>
+    <div class="viewer" id="viewer">
+        <button id="close-viewer">✕</button>
+        <img id="full-image" src="" alt="">
+    </div>
+
+<script src="coolpics.js"></script>
 </body>
 </html>
