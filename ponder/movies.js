@@ -75,7 +75,7 @@ const movies = [
         title: "The Lion King",
         date: "June 24, 1994",
         description: "A young lion must overcome loss and accept his destiny as the future king of the Pride Lands.",
-        imgSrc: "https://wddbyui.github.io/wdd131/images/lionking.jpg",
+        imgSrc: "https://upload.wikimedia.org/wikipedia/en/3/3d/The_Lion_King_poster.jpg?utm_source=chatgpt.com",
         imgAlt: "Movie poster for The Lion King featuring Simba",
         ages: "6+",
         genre: "Family/Adventure",
@@ -85,21 +85,11 @@ const movies = [
         title: "Up",
         date: "May 29, 2009",
         description: "An elderly man ties thousands of balloons to his house and sets off on an adventure with a young boy.",
-        imgSrc: "https://wddbyui.github.io/wdd131/images/up.jpg",
+        imgSrc: "https://upload.wikimedia.org/wikipedia/en/0/05/Up_%282009_film%29.jpg?utm_source=chatgpt.com",
         imgAlt: "Movie poster for Up featuring a flying house lifted by colorful balloons",
         ages: "6+",
         genre: "Family/Adventure",
         stars: "⭐⭐⭐⭐⭐"
-        },
-        {
-        title: "The Incredibles",
-        date: "November 5, 2004",
-        description: "A family of superheroes must work together to stop a dangerous villain and protect the world.",
-        imgSrc: "https://wddbyui.github.io/wdd131/images/incredibles.jpg",
-        imgAlt: "Movie poster for The Incredibles featuring the superhero family",
-        ages: "7+",
-        genre: "Action/Family",
-        stars: "⭐⭐⭐⭐"
         }
     ];
 
