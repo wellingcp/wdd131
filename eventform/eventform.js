@@ -10,7 +10,7 @@ const date = document.querySelector("#date");
 const errors = document.querySelector("#errors");
 const ticket = document.querySelector("#ticket");
 
-// Set minimum date to tomorrow
+
 const tomorrow = new Date();
 tomorrow.setDate(tomorrow.getDate() + 1);
 
@@ -18,7 +18,7 @@ const minDate = tomorrow.toISOString().split("T")[0];
 date.min = minDate;
 
 
-// Show additional input
+
 type.addEventListener("change", function () {
 
     additionalInfo.classList.remove("hide");
@@ -42,7 +42,7 @@ type.addEventListener("change", function () {
 });
 
 
-// Submit form
+
 form.addEventListener("submit", function (event) {
 
     event.preventDefault();
@@ -56,17 +56,17 @@ form.addEventListener("submit", function (event) {
     const lastName = document.querySelector("#lastName").value;
     const email = document.querySelector("#email").value;
 
-    // Check date
+    
     if (!date.value || date.value <= minDate) {
         errorMessages.push("Please choose a future event date.");
     }
 
-    // Check type
+    
     if (type.value === "") {
         errorMessages.push("Please select a ticket type.");
     }
 
-    // Check student number
+    
     if (type.value === "student") {
 
         const studentPattern = /^\d{9}$/;
@@ -76,7 +76,7 @@ form.addEventListener("submit", function (event) {
         }
     }
 
-    // Check guest code
+    
     if (type.value === "guest") {
 
         if (info.value !== "EVENT131") {
@@ -84,7 +84,7 @@ form.addEventListener("submit", function (event) {
         }
     }
 
-    // Show errors
+    
     if (errorMessages.length > 0) {
 
         errors.innerHTML = errorMessages.join("<br>");
