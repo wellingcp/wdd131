@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Character Card">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="snortleblat.webp">
+    <meta property="og:url" content="https://yourusername.github.io/wdd131/charactercard/">
+    <meta name="description" content="A fantasy character card showing character stats and level.">
+
+    <title>Character Card</title>
+
+    <link rel="stylesheet" href="charactercard.css">
+    <script src="charactercard.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Character Card</h1>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2 id="name">Snortleblat</h2>
+
+            <img
+                id="image"
+                src="snortleblat.webp"
+                alt="Swamp Beast Diplomat"
+            >
+
+            <div class="character-info">
+                <p>Class: <span id="class">Swamp Beast Diplomat</span></p>
+
+                <p>Level: <span id="level">5</span></p>
+
+                <p>Health: <span id="health">100</span></p>
+            </div>
+
+            <div class="buttons">
+                <button id="attack" type="button">Attack</button>
+
+                <button id="levelUp" type="button">Level Up</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>WDD 131 - Dynamic Web Fundamentals</p>
+    </footer>
+</body>
+</html>
