@@ -18,6 +18,8 @@ const character = {
     levelUp() {
         this.level += 1;
     }
+
+        
 };
 
 function displayCharacter() {
