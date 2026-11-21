@@ -1,224 +1,103 @@
 
-
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
     color: #333;
-    background-color: white;
 }
-
-
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    border-bottom: 2px solid #ddd;
+    background-color: #365b45;
+    color: white;
+    text-align: center;
+    padding: 25px;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.logo img {
-    width: 80px;
-    height: auto;
-}
-
-h1 {
-    font-family: "Amatic SC", cursive;
-    font-size: 3.5rem;
+header h1 {
     margin: 0;
 }
-
-
 
 main {
     max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
+    margin: 30px auto;
+    padding: 15px;
 }
 
-
-
-.search {
+#searchForm {
     display: flex;
-    justify-content: center;
-    margin: 20px 0 40px;
+    gap: 10px;
+    margin-bottom: 30px;
 }
 
-.search form {
-    display: flex;
-    width: 100%;
-    max-width: 600px;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.search input {
+#searchInput {
     flex: 1;
     padding: 12px;
-    font-size: 1rem;
-    border: none;
-    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.search button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 15px;
+button {
+    background-color: #365b45;
+    color: white;
     border: none;
-    background-color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.search button img {
-    width: 25px;
-    height: 25px;
+button:hover {
+    background-color: #254331;
 }
 
-
-
-.recipe {
-    display: flex;
-    gap: 25px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+.recipe-card {
+    background-color: white;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.recipe-image {
-    flex: 1;
-}
-
-.recipe-image img {
+.recipe-card img {
     width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 5px;
+    max-height: 350px;
+    object-fit: cover;
 }
 
-.recipe-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+.recipe-info {
+    padding: 20px;
 }
 
-.category {
-    color: #555;
-    border: 1px solid #999;
-    padding: 5px 12px;
-    margin: 0 0 10px;
-    border-radius: 4px;
-    font-size: 0.9rem;
+.recipe-info h2 {
+    color: #365b45;
 }
 
-h2 {
-    font-family: "Amatic SC", cursive;
-    font-size: 3rem;
-    margin: 0 0 10px;
-    color: #333;
+.recipe-info h3 {
+    margin-top: 25px;
 }
 
-
-
-.rating {
-    display: flex;
-    gap: 3px;
-    font-size: 1.2rem;
-    margin-bottom: 15px;
+.recipe-info li {
+    margin-bottom: 8px;
+    line-height: 1.5;
 }
-
-.icon-star {
-    color: #f5a623;
-}
-
-.icon-star-empty {
-    color: #ccc;
-}
-
-
-.recipe-description {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin: 0;
-}
-
-
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 25px;
-    margin-top: 40px;
-    border-top: 2px solid #ddd;
+    background-color: #365b45;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }
 
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.social img {
-    width: 35px;
-    height: 35px;
-}
-
-.attribution a {
-    color: #555;
-    font-size: 0.8rem;
-    text-decoration: none;
-}
-
-.attribution a:hover {
-    text-decoration: underline;
-}
-
-
-
-@media screen and (max-width: 600px) {
-
-    .logo img {
-        width: 60px;
-    }
-
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    main {
-        padding: 15px;
-    }
-
-    .recipe {
+@media (max-width: 600px) {
+    #searchForm {
         flex-direction: column;
-        gap: 15px;
     }
 
-    .recipe-description {
-        display: none;
-    }
-
-    h2 {
-        font-size: 2.5rem;
-    }
-
-    footer {
-        margin-top: 25px;
+    button {
+        width: 100%;
     }
 }
