@@ -5,33 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Recipe Book | Apple Crisp</title>
+    <title>Recipe Book</title>
 
-    <meta name="description" content="Discover delicious recipes, including this homemade Apple Crisp recipe.">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Recipe Book | Apple Crisp">
-    <meta property="og:description" content="Discover delicious recipes, including homemade Apple Crisp.">
-    <meta property="og:url" content="https://wellingcp.github.io/wdd131/recipes/">
-    <meta property="og:image" content="social-preview-image.png">
+    <meta name="description" content="Discover delicious recipes.">
 
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Recipe Book | Apple Crisp">
-    <meta name="twitter:description" content="Discover delicious recipes, including homemade Apple Crisp.">
-    <meta name="twitter:image" content="social-preview-image.png">
-
-    
     <link rel="icon" href="favicon.ico">
 
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-
-   
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
-
     <link rel="stylesheet" href="recipes.css">
+
+    <script src="recipes.js" defer></script>
 </head>
 
 <body>
@@ -45,50 +32,24 @@
 
     <main>
 
-        
         <section class="search">
-            <form>
-                <input type="search" placeholder="Find a recipe...">
+            <form id="searchForm">
+
+                <input
+                    type="search"
+                    id="searchInput"
+                    placeholder="Find a recipe..."
+                    aria-label="Find a recipe"
+                >
+
                 <button type="submit" aria-label="Search">
                     <img src="images/search.svg" alt="">
                 </button>
+
             </form>
         </section>
 
-        
-        <section class="recipe">
-
-            <div class="recipe-image">
-                <img src="images/apple-crisp.jpg" alt="Homemade apple crisp with a golden crispy topping">
-            </div>
-
-            <div class="recipe-content">
-
-                <p class="category">Dessert</p>
-
-                <h2>Apple Crisp</h2>
-
-              
-                <span
-                    class="rating"
-                    role="img"
-                    aria-label="Rating: 4 out of 5 stars"
-                >
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star">⭐</span>
-                    <span aria-hidden="true" class="icon-star-empty">☆</span>
-                </span>
-
-                <p class="recipe-description">
-                    This apple crisp recipe is a delicious dessert made
-                    with fresh apples and a sweet, crunchy topping.
-                    It is perfect for fall and easy to prepare.
-                </p>
-
-            </div>
-
+        <section id="recipeContainer" class="recipe-container">
         </section>
 
     </main>
@@ -96,8 +57,6 @@
     <footer>
 
         <div class="social">
-
-           
 
             <a href="#" aria-label="Instagram">
                 <img src="images/instagram_icon.svg" alt="Instagram icon">
@@ -114,7 +73,7 @@
         </div>
 
         <div class="attribution">
-            <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+            <a href="https://www.flaticon.com/free-icons/recipe">
                 Recipe icons created by Freepik - Flaticon
             </a>
         </div>
